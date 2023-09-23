@@ -19,6 +19,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    var totalEnemies = 0 {
+        didSet {
+            if totalEnemies == 20 {
+                timerInterval-=0.1
+                totalEnemies = 0
+            }
+        }
+    }
+    
+    var timerInterval = 0.0 {
+        didSet {
+            gameTimer?.invalidate()
+            gameTimer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
+        }
+    }
+    
     let possibleEnemies = ["ball", "hammer", "tv"]
     var isGameOver = false
     var isPlayerTouched = false
@@ -27,8 +43,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func didMove(to view: SKView) {
         backgroundColor = .black
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.35, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
-
+        timerInterval = 1
+        
         starfield = SKEmitterNode(fileNamed: "starfield")!
         starfield.position = CGPoint(x: 1024, y: 384)
         starfield.advanceSimulationTime(10)
@@ -66,6 +82,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.physicsBody?.angularVelocity = 5
         sprite.physicsBody?.linearDamping = 0
         sprite.physicsBody?.angularDamping = 0
+        totalEnemies+=1
     }
     
     override func update(_ currentTime: TimeInterval) {
