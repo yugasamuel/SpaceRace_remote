@@ -21,6 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let possibleEnemies = ["ball", "hammer", "tv"]
     var isGameOver = false
+    var isPlayerTouched = false
     var gameTimer: Timer?
     
     override func didMove(to view: SKView) {
@@ -35,6 +36,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         starfield.zPosition = -1
 
         player = SKSpriteNode(imageNamed: "player")
+        player.name = "player"
         player.position = CGPoint(x: 100, y: 384)
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
         player.physicsBody?.contactTestBitMask = 1
@@ -81,14 +83,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         var location = touch.location(in: self)
-
+        
         if location.y < 100 {
             location.y = 100
         } else if location.y > 668 {
             location.y = 668
         }
-
-        player.position = location
+        
+        let touchedNode = atPoint(location)
+        
+        if touchedNode.name == player.name {
+            isPlayerTouched = true
+        }
+        
+        if isPlayerTouched == true {
+            player.position = location
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        isPlayerTouched = false
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
