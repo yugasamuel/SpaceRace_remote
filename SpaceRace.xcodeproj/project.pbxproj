@@ -15,6 +15,14 @@
 		659ECFAA2ABEA96200002BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFA82ABEA96200002BBD /* Main.storyboard */; };
 		659ECFAC2ABEA96300002BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFAB2ABEA96300002BBD /* Assets.xcassets */; };
 		659ECFAF2ABEA96300002BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFAD2ABEA96300002BBD /* LaunchScreen.storyboard */; };
+		659ECFBE2ABEAABB00002BBD /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFB62ABEAABB00002BBD /* explosion.sks */; };
+		659ECFBF2ABEAABB00002BBD /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFB72ABEAABB00002BBD /* tv@2x.png */; };
+		659ECFC02ABEAABB00002BBD /* bigSpark.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFB82ABEAABB00002BBD /* bigSpark.png */; };
+		659ECFC12ABEAABB00002BBD /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFB92ABEAABB00002BBD /* spark.png */; };
+		659ECFC22ABEAABB00002BBD /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFBA2ABEAABB00002BBD /* player@2x.png */; };
+		659ECFC32ABEAABB00002BBD /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFBB2ABEAABB00002BBD /* ball@2x.png */; };
+		659ECFC42ABEAABB00002BBD /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFBC2ABEAABB00002BBD /* starfield.sks */; };
+		659ECFC52ABEAABB00002BBD /* hammer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659ECFBD2ABEAABB00002BBD /* hammer@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,14 @@
 		659ECFA92ABEA96200002BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		659ECFAB2ABEA96300002BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659ECFAE2ABEA96300002BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659ECFB62ABEAABB00002BBD /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		659ECFB72ABEAABB00002BBD /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tv@2x.png"; sourceTree = "<group>"; };
+		659ECFB82ABEAABB00002BBD /* bigSpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigSpark.png; sourceTree = "<group>"; };
+		659ECFB92ABEAABB00002BBD /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		659ECFBA2ABEAABB00002BBD /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		659ECFBB2ABEAABB00002BBD /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		659ECFBC2ABEAABB00002BBD /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
+		659ECFBD2ABEAABB00002BBD /* hammer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hammer@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +83,24 @@
 				659ECFA82ABEA96200002BBD /* Main.storyboard */,
 				659ECFAB2ABEA96300002BBD /* Assets.xcassets */,
 				659ECFAD2ABEA96300002BBD /* LaunchScreen.storyboard */,
+				659ECFB52ABEAABB00002BBD /* Content */,
 			);
 			path = SpaceRace;
+			sourceTree = "<group>";
+		};
+		659ECFB52ABEAABB00002BBD /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				659ECFB62ABEAABB00002BBD /* explosion.sks */,
+				659ECFB72ABEAABB00002BBD /* tv@2x.png */,
+				659ECFB82ABEAABB00002BBD /* bigSpark.png */,
+				659ECFB92ABEAABB00002BBD /* spark.png */,
+				659ECFBA2ABEAABB00002BBD /* player@2x.png */,
+				659ECFBB2ABEAABB00002BBD /* ball@2x.png */,
+				659ECFBC2ABEAABB00002BBD /* starfield.sks */,
+				659ECFBD2ABEAABB00002BBD /* hammer@2x.png */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +162,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				659ECFAA2ABEA96200002BBD /* Main.storyboard in Resources */,
+				659ECFC32ABEAABB00002BBD /* ball@2x.png in Resources */,
+				659ECFC12ABEAABB00002BBD /* spark.png in Resources */,
+				659ECFBF2ABEAABB00002BBD /* tv@2x.png in Resources */,
+				659ECFC22ABEAABB00002BBD /* player@2x.png in Resources */,
+				659ECFC02ABEAABB00002BBD /* bigSpark.png in Resources */,
 				659ECFA12ABEA96200002BBD /* GameScene.sks in Resources */,
+				659ECFC52ABEAABB00002BBD /* hammer@2x.png in Resources */,
 				659ECFAC2ABEA96300002BBD /* Assets.xcassets in Resources */,
+				659ECFBE2ABEAABB00002BBD /* explosion.sks in Resources */,
 				659ECFAF2ABEA96300002BBD /* LaunchScreen.storyboard in Resources */,
+				659ECFC42ABEAABB00002BBD /* starfield.sks in Resources */,
 				659ECFA32ABEA96200002BBD /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +339,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,8 +367,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
